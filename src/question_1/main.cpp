@@ -9,7 +9,7 @@ using std::endl;
 
 int main()
 {
-    int num = 0;
+    int num;
     int get_fib_number;
     int choice;
     char again = 'y';
