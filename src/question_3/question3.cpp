@@ -11,9 +11,10 @@ double get_dna_p_distance(const std::string& dna_one, const std::string& dna_two
 
     double ratio = double(diff) / dna_one.length();
 
+    ratio = int(ratio * 10000 + 0.5) / 10000.0;
+
     return ratio;
 }
-
 
 bool test_config()
 {
