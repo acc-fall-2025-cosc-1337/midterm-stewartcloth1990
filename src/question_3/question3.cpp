@@ -2,9 +2,9 @@
 
 double get_dna_p_distance(const std::string& dna_one, const std::string& dna_two)
 {
-    int diff = 0;
+    size_t diff = 0;
 
-    for (int i = 0; i < dna_one.length(); ++i)
+    for (size_t i = 0; i < dna_one.length(); ++i)
     {
         if (dna_one[i] != dna_two[i]) diff++;
     }
