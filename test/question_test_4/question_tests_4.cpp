@@ -10,3 +10,9 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("transcribe_dna_into_rna returns correct RNA sequence") {
+	std::string dna = "GATGGAACTTGACTACGTAAATT";
+	std::string expected_rna = "GAUGGAACUUGACUACGUAAAUU";
+	REQUIRE(transcribe_dna_into_rna(dna) == expected_rna);
+}
