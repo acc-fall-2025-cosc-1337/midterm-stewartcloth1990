@@ -6,7 +6,6 @@ using namespace std;
 string transcribe_dna_into_rna(const string& dna)
 {
     string rna = dna;
-
     for (char& c : rna)
     {
         if (c == 'T')
